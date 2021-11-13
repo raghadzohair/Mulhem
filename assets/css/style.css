@@ -1,0 +1,547 @@
+/* welcome page*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.logo {
+    /*mulhem logo */
+
+    background: white;
+    border: none;
+    float: right;
+    margin-top: -30px;
+  
+    
+
+}
+.logo:focus {
+    outline: none;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+nav  ul{
+    float: left;
+
+}
+nav ul li {
+float: left;
+list-style: none;
+position: relative;
+
+}
+nav ul li a {
+    display: block;
+    font-family: Arial, sans-serif;
+    color: #4C4B4B;
+    font-size: 17px;
+    padding: 24px 14px;
+    text-decoration: none;
+
+}
+nav ul li a:hover {
+  background-color:rgba(194, 63, 63, 0.60); 
+  color: white;
+  border-radius: 20px; 
+  
+  
+
+}
+nav ul li ul  {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px 20px 20px 20px;
+
+}
+nav ul li:hover ul  {
+    display: block;
+
+}
+nav ul li ul li  {
+ width: 180px;
+ border-radius: 20px;
+
+}
+nav ul li ul li a  {
+   padding: 8px 14px;
+
+}
+nav ul li ul li a:hover  {
+  background-color:rgba(194, 63, 63, 0.60); 
+   border-radius: 20px;
+
+
+}
+.header {
+
+position: fixed;
+right: 0;
+left: 0;
+top: 0;
+
+z-index: 1030;
+background-color: white;
+
+border: 01;
+-webkit-transition: all .5s ease;
+transition: all .5s ease;
+border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.01);
+
+
+}
+.searchButton {
+box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.01);
+
+top: -110px;
+margin: auto;
+position: relative;
+width: 450px;
+height: 42px;
+border: 2px solid rgba(129, 126, 126, 0.1);
+background-color: rgba(129, 126, 126, 0.1);
+padding: 0px 10px;
+border-radius: 50px;
+}
+
+.elementContainer2 {
+width: 100%;
+height: 70%;
+vertical-align: middle;
+
+
+
+}
+
+.search {
+/*border: none;*/
+
+border-color: seashell;
+width: 100%;
+height: 100%;
+padding: 0px 10px;
+border-radius: 50px;
+font-size: 18px;
+font-family: "Arial, sans-serif";
+color: #424242;
+font-weight: 500;
+}
+
+.search:focus {
+outline: none;
+}
+/*end style for search button */
+/*start style for popUp window  */
+.popup{
+  
+display: none;
+width: 100%;
+height: 100%;
+position: relative;
+top: 0;
+justify-content: center;
+text-align: center;
+align-items: center;
+
+
+}
+.pupup-content {
+height: 190px;
+width: 290px;
+background:white;
+padding: 20px;
+border-radius: 20px;
+position: relative;
+
+margin-top: -100px;
+}
+
+#close{
+position: absolute;
+top: -1px;
+left: -7px;
+height: 20px;
+width: 29px;
+border-radius: 50px;
+cursor: pointer;
+
+
+}
+.videoDiv{
+box-shadow: 0 6px 14px 0 rgba(153, 197, 231, 0.507), 0 5px 19px 0 rgba(70, 86, 100, 0.507);
+background-color: white;
+margin-top:70px;
+border-radius: 20px;
+padding: 60px 14px;
+}
+
+
+
+/*end style for popUp window  */
+
+/* prof*/
+*,
+ul {
+  margin: 100;
+  /*هنا لو حطيناه صفر حتزبط المربعات لكن تخرب بعض المقاسات*/
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.row {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+/*
+input {
+  display: none;
+}
+*/
+.box-paginacao {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.box-paginacao h2 {
+  /* Tutors*/
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 0 0 50px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: #4C4B4B;
+}
+
+.box-paginacao .box-vitrines {
+  width: 100%;
+  height: 340px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.box-paginacao ul {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.box-paginacao ul li {
+  width: 250px;
+  height: 150px;
+  float: left;
+  margin: 0 0 10px 60px;
+  border: 1px;
+  border-radius: 30px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  color: #4C4B4B;
+  box-shadow: 0 1px 5px 0 rgba(59, 49, 49, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.01);
+}
+
+.box-paginacao .vitrine1,
+.box-paginacao .vitrine2,
+.box-paginacao .vitrine3,
+.box-paginacao .vitrine4 {
+  width: 100%;
+  height: 336px;
+  float: left;
+  margin-bottom: 33px;
+}
+
+.btn-paginacao {
+  /*باك قراون ورى الازرار*/
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+  
+}
+
+.btn-paginacao ul {
+  width: auto;
+  height: auto;
+}
+
+.btn-paginacao ul li {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin: 0 5px 0 0;
+  border: 0;
+}
+
+.btn-paginacao ul li:last-child {
+  margin: 0;
+}
+
+.btn-paginacao ul li label {
+  /*الازرار*/
+  width: 100%;
+  height: 30px;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #4C4B4B;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color .25s ease-in-out;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.01);
+}
+
+.btn-paginacao ul li label:hover {
+  /* الألوان لما يحط المؤشر*/
+  background-color: rgba(194, 63, 63, 0.83);
+  color: #F7F4F4;
+}
+
+#paginacao1:checked~.box-vitrines>ul {
+  transition: transform .7s ease-in-out;
+  transform: translateY(0px);
+}
+
+#paginacao1:checked~.box-vitrines label[for="paginacao1"] {
+  background-color: rgba(194, 63, 63, 0.83);
+  color: #F7F4F4;
+}
+
+#paginacao2:checked~.box-vitrines>ul {
+  transition: transform .7s ease-in-out;
+  transform: translateY(-369px);
+}
+
+#paginacao2:checked~.box-vitrines label[for="paginacao2"] {
+  background-color: rgba(194, 63, 63, 0.83);
+  color: #F7F4F4;
+}
+
+#paginacao3:checked~.box-vitrines>ul {
+  transition: transform .7s ease-in-out;
+  transform: translateY(-738px);
+}
+
+#paginacao3:checked~.box-vitrines label[for="paginacao3"] {
+  background-color: rgba(194, 63, 63, 0.83);
+  color: #F7F4F4;
+}
+
+#paginacao4:checked~.box-vitrines>ul {
+  transition: transform .7s ease-in-out;
+  transform: translateY(-1107px);
+}
+
+#paginacao4:checked~.box-vitrines label[for="paginacao4"] {
+  background-color: rgba(194, 63, 63, 0.83);
+  color: #F7F4F4;
+}
+
+.checked {
+  color: orange;
+}
+
+
+.myDiv2 {
+
+    box-shadow: 0 6px 14px 0 rgba(153, 197, 231, 0.507), 0 5px 19px 0 rgba(70, 86, 100, 0.507);
+    text-align: center;
+    margin-left: 450px;
+    height: 700px;
+    width: 550px;
+    margin: auto;
+    border: 2px;
+    border-radius: 30px;
+    padding: 20px;
+    color: #4C4B4B;
+
+
+}
+
+.p.fieldShape {
+    height: 50px;
+
+
+}.error {color: rgba(194, 63, 63, 0.83);}
+
+.button {
+    background-color: rgba(194, 63, 63, 0.83);
+    border: none;
+    float: right;
+    
+    border-radius: 20px;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    
+    color: #F7F4F4;
+    font-size: 16px;
+    margin: 20px 20px;
+    cursor: pointer;
+    box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.19);
+}
+
+.myDiv {
+
+    box-shadow: 0 6px 14px 0 rgba(153, 197, 231, 0.507), 0 5px 19px 0 rgba(70, 86, 100, 0.507);
+    text-align: center;
+    margin: auto;
+    margin-top: 75px;
+    
+    
+    height: 110px;
+    width: 550px;
+    color: #4C4B4B;
+    
+    border: 2px;
+    border-radius: 30px;
+    padding: 20px;
+    }
+
+
+    .accordion {
+        background-color: rgba(231, 227, 227, 0.253);
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 18px;
+        transition: 0.4s;
+        border-radius: 4px;
+        
+      }
+      .active, .accordion:hover {
+        background-color: #ccc; 
+      }
+      .panel {
+        padding: 0 18px;
+        display: none;
+        text-align: center;
+        background-color: white;
+        overflow: hidden;
+        font-size: 12px;
+        color: #646464;
+      }
+      .btn {
+      background-color: rgba(194, 63, 63, 0.83);
+      border: none;
+      float: center;
+      border-radius: 4px;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: normal;
+      color: #F7F4F4;
+      font-size: 12px;
+      margin: 20px 20px;
+      cursor: pointer;
+      box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.19);
+      }
+    
+
+
+
+      .divSchedule {
+
+        box-shadow: 0 6px 14px 0 rgba(153, 197, 231, 0.507), 0 5px 19px 0 rgba(70, 86, 100, 0.507);
+        text-align: left;
+        margin-left: 450px;
+        height: 350px;
+        width: 650px;
+        margin: auto;
+        border: 2px;
+        border-radius: 30px;
+        padding: 20px;
+        color: #4C4B4B;
+        
+        }
+
+        .btnReservation {
+            background-color: rgba(194, 63, 63, 0.83);
+            border: none;
+            float: center;
+            border-radius: 10px;
+            padding: 5px 8px;
+            text-align: center;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-weight: normal;
+            color: #F7F4F4;
+            font-size: 10px;
+            margin: 10x 10px;
+            
+            cursor: pointer;
+            
+            box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.19);
+            }
+            
+
+
+
+            .buttonPlus {
+                background-color: rgba(194, 63, 63, 0.83);
+                border: none;
+                float: center;
+                border-radius: 50%;
+                padding: 5px 8px;
+                text-align: center;
+                text-decoration: none;
+                font-family: Arial, sans-serif;
+                font-weight: bolder;
+                color: #F7F4F4;
+                font-size: 30px;
+                margin: 40px 20px;
+                cursor: pointer;
+                box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.19);
+                }
+
+
+                .myDivPlus {
+
+                    box-shadow: 0 6px 14px 0 rgba(153, 197, 231, 0.507), 0 5px 19px 0 rgba(70, 86, 100, 0.507);
+                    text-align: center;
+                    margin-left: 450px;
+                    height: 350px;
+                    width: 550px;
+                    margin: auto;
+                    border: 2px;
+                    border-radius: 30px;
+                    padding: 20px;
+                    color: #4C4B4B;
+                    
+                    }
+        
+/*evaluat style*/
+

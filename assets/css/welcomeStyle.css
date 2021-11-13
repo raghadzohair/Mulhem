@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1030;
+    background-color: white;
+    border: 1;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.01);
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+
+nav ul {
+    float: left;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    font-family: Arial, sans-serif;
+    color: #4C4B4B;
+    font-size: 17px;
+    padding: 24px 14px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgba(194, 63, 63, 0.60);
+    color: white;
+    border-radius: 20px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px 20px 20px 20px;
+    margin-left: -140px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 180px;
+    border-radius: 20px;
+}
+
+nav ul li ul li a {
+    padding: 8px 14px;
+}
+
+nav ul li ul li a:hover {
+    background-color: rgba(194, 63, 63, 0.60);
+    border-radius: 20px;
+}
+
+.button {
+    background-color: rgba(194, 63, 63, 0.83);
+    border: none;
+    border-radius: 20px;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #F7F4F4;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.19);
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #4c4b4b3d;
+    outline: none;
+    background-color: rgba(186, 224, 255, 0.349);
+    color: #4C4B4B;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.01);
+}
+
+#myBtn:hover {
+    background-color: rgba(194, 63, 63, 0.60);
+}
+
+.welcomeText1 {
+    font-family: Arial, sans-serif;
+    color: #4C4B4B;
+    font-size: 40px;
+}
+
+.welcomeText2 {
+    font-family: Arial, sans-serif;
+    color: #4C4B4B;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.welcomeText3 {
+    /*Get the most out of */
+    font-family: Arial, sans-serif;
+    color: #4C4B4B;
+    font-size: 35px;
+    padding-left: 0px;
+    /*دا مو راضي يزبط مدري اشبه */
+}
+
+.welcomeText4 {
+    /*Video recordings of every  */
+    font-family: Arial, sans-serif;
+    color: #4C4B4B;
+    font-size: 13px;
+    padding-left: 210px;
+    font-weight: normal;
+    padding-top: -50px;
+}
+
+.welcomeText5 {
+    /*Reservation let you */
+    font-family: Arial, sans-serif;
+    color: #4C4B4B;
+    font-size: 13px;
+    font-weight: normal;
+    padding-left: 110px;
+}
+
+.welcomeText6 {
+    /*work on your */
+    font-family: Arial, sans-serif;
+    color: #4C4B4B;
+    font-size: 35px;
+    padding-left: 130px;
+}
+
+.mobilePic {
+    padding-left: 100px;
+    padding-top: 80px;
+}
+
+.SchedulePic {
+    padding-left: 100px;
+}
+/* prof*/
+
+*,
+ul {
+    margin: 100;
+    /*هنا لو حطيناه صفر حتزبط المربعات لكن تخرب بعض المقاسات*/
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.row {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box-paginacao {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.box-paginacao h2 {
+    /*Our Professional Tutors*/
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 0 0 50px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #4C4B4B;
+}
+
+.box-paginacao .box-vitrines {
+    width: 100%;
+    height: 250px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.box-paginacao ul {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.box-paginacao ul li {
+    width: 250px;
+    height: 150px;
+    float: left;
+    margin: 0 0 10px 60px;
+    border: 1px;
+    border-radius: 30px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    color: #4C4B4B;
+    box-shadow: 0 1px 5px 0 rgba(59, 49, 49, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.01);
+}
+
+.box-paginacao .vitrine1,
+.box-paginacao .vitrine2,
+.box-paginacao .vitrine3,
+.box-paginacao .vitrine4 {
+    width: 100%;
+    height: 336px;
+    float: left;
+    margin-bottom: 33px;
+}
+
+.btn-paginacao {
+    /*باك قراون ورى الازرار*/
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    background-color: #FFF;
+}
+
+.btn-paginacao ul {
+    width: auto;
+    height: auto;
+}
+
+.btn-paginacao ul li {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 0 5px 0 0;
+    border: 0;
+}
+
+.btn-paginacao ul li:last-child {
+    margin: 0;
+}
+
+.btn-paginacao ul li label {
+    /*الازرار*/
+    width: 100%;
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #4C4B4B;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color .25s ease-in-out;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.01);
+}
+
+.btn-paginacao ul li label:hover {
+    /* الألوان لما يحط المؤشر*/
+    background-color: rgba(194, 63, 63, 0.83);
+    color: #F7F4F4;
+}
+
+#paginacao1:checked~.box-vitrines>ul {
+    transition: transform .7s ease-in-out;
+    transform: translateY(0px);
+}
+
+#paginacao1:checked~.box-vitrines label[for="paginacao1"] {
+    background-color: rgba(194, 63, 63, 0.83);
+    color: #F7F4F4;
+}
+
+#paginacao2:checked~.box-vitrines>ul {
+    transition: transform .7s ease-in-out;
+    transform: translateY(-369px);
+}
+
+#paginacao2:checked~.box-vitrines label[for="paginacao2"] {
+    background-color: rgba(194, 63, 63, 0.83);
+    color: #F7F4F4;
+}
+
+#paginacao3:checked~.box-vitrines>ul {
+    transition: transform .7s ease-in-out;
+    transform: translateY(-738px);
+}
+
+#paginacao3:checked~.box-vitrines label[for="paginacao3"] {
+    background-color: rgba(194, 63, 63, 0.83);
+    color: #F7F4F4;
+}
+
+#paginacao4:checked~.box-vitrines>ul {
+    transition: transform .7s ease-in-out;
+    transform: translateY(-1107px);
+}
+
+#paginacao4:checked~.box-vitrines label[for="paginacao4"] {
+    background-color: rgba(194, 63, 63, 0.83);
+    color: #F7F4F4;
+}
+
+.checked {
+    color: orange;
+}
+/* end prof*/
+
+.foot {
+    font-family: Arial, sans-serif;
+    color: #4C4B4B;
+}
+
+.subtitleUsefulLink a {
+    color: #4C4B4B;
+    text-decoration: none;
+}
+
+.subtitleNeedHelp {
+    color: #4C4B4B;
+    text-decoration: none;
+    padding-left: 160px;
+}
+
+.subtitleContact {
+    color: #4C4B4B;
+    text-decoration: none;
+    padding-right: 220px;
+}
+
+.div {
+    display: block;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: rgba(186, 224, 255, 0.452);
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-twitter {
+    background: rgba(186, 224, 255, 0.452);
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-instagram {
+    background: rgba(186, 224, 255, 0.452);
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>مـُـلهـِم</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="header">
+
+        <ul>
+            <li><a herf="#"><i class="fa fa-user-circle" style="font-size: 60px; color: #4c4b4c; margin-top: -24px;
+            "></i></a>
+                <ul>
+                    <li><a herf="#">My Profile</a></li>
+                    <li><a herf="welcome.php">SignOut</a></li>
+                </ul>
+            </li>
+            <li><a herf="#"><i class="far fa-calendar-alt" style="font-size: 23px; color:#4C4B4B;"></i></a></li>
+            <li><a herf="#"><i class="fas fa-comments" style="font-size: 23px;
+            color: #4c4b4c; "></i></a></li>
+            <li><a herf="#"><i class="fas fa-heart" style="font-size: 23px; color: #4c4b4c; "></i></a></li>
+        </ul>
+        <ul style="float: right;">
+            <li><a href="mySession.php">My Session</a></li>
+            <li><a herf="#">History</a></li>
+            <li><a herf="#">Tutors</a></li>
+            <li>
+                <a herf="welcome.php" style="margin-top: -50px;"><img src="assets/img/logo.jpeg" alt="computer" width="100" height="80"></a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <div class="myDiv">
+        <h2 style="text-align: center; margin-top: 30px;">&emsp;User Name her</h2>
+    </div>
+
+    <br><br>
+
+    <div class="myDiv2">
+        <h2 align="center">Update My Acount <br></h2>
+        <br>
+        <form method="POST" id="form"  onsubmit="return validation()">
+            <p>
+                <br>
+
+                </script>
+
+
+                <label>Name: &emsp;&emsp;&emsp;&ensp; <span id="result-name"></span>&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <br><br>
+                </label>
+                <script>
+                    document.getElementById("result-name").innerHTML = localStorage.getItem("textvalue");
+                </script>
+
+                <label>Email:&emsp;&emsp;&emsp;&ensp; <span id="result-email"></span>&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <br><br>
+                </label>
+                <script>
+                    document.getElementById("result-email").innerHTML = localStorage.getItem("email");
+                </script>
+
+                <label>Password:&emsp;&emsp;&emsp;&ensp; <span id="result-pass"></span>&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <br><br>
+                </label>
+                <script>
+                    document.getElementById("result-pass").innerHTML = localStorage.getItem("pass");
+                </script>
+
+                <label>Gender:&emsp;&emsp;&emsp;&ensp; <span id="result-gender"></span>&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <br><br>
+                </label>
+                <script>
+                    document.getElementById("result-gender").innerHTML = localStorage.getItem("gender");
+                </script>
+
+
+            </p>
+
+            <button class="button" type="submit" formaction="StudentInfo.php">Update</button>
+
+            <button class="button" type="reset" style="margin: 40px -10px;">Cancel</button>
+
+
+
+        </form>
+    </div>
+</body>
+
+</html>

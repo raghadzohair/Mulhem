@@ -1,0 +1,92 @@
+
+    .myDiv2 {
+
+        box-shadow: 0 6px 14px 0 rgba(153, 197, 231, 0.507), 0 5px 19px 0 rgba(70, 86, 100, 0.507);
+        text-align: center;
+        margin-left: 450px;
+        height: 700px;
+        width: 550px;
+        margin: auto;
+        border: 2px;
+        border-radius: 30px;
+        padding: 20px;
+        color: #4C4B4B;
+
+
+    }
+
+    .p.fieldShape {
+        height: 50px;
+
+
+    }
+
+    .button {
+        background-color: rgba(194, 63, 63, 0.83);
+        border: none;
+        float: right;
+        border-radius: 20px;
+        padding: 5px 8px;
+        text-align: center;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        color: #F7F4F4;
+        font-size: 16px;
+        margin: 20px 20px;
+        cursor: pointer;
+        box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .error {
+        color: rgba(194, 63, 63, 0.83);
+    }
+
+    #custom-button {
+        padding: 10px;
+        color: white;
+        background-color: rgba(194, 63, 63, 0.83);
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+
+    }
+
+    #custom-button:focus {
+        outline: none;
+    }
+
+    #custom-text {
+        margin-left: 10px;
+        font-family: Arial, sans-serif;
+        color: #aaa;
+
+        font-size: 14px;
+    }
+
+    #custom-button2 {
+        padding: 10px;
+        color: white;
+        background-color: rgba(194, 63, 63, 0.83);
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+
+    }
+
+    #custom-button2:focus {
+        outline: none;
+    }
+
+    #custom-text2 {
+        margin-left: 10px;
+        font-family: Arial, sans-serif;
+        color: #aaa;
+
+        font-size: 14px;
+    }
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>مـُـلهـِم</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .myDiv h2 {
+            text-align: left;
+            color: #4C4B4B;
+            font-size: medium;
+        }
+        
+        .myDiv2 {
+
+            box-shadow: 0 6px 14px 0 rgba(153, 197, 231, 0.507), 0 5px 19px 0 rgba(70, 86, 100, 0.507);
+            text-align: center;
+            margin-left: 450px;
+            height: 500px;
+            width: 550px;
+            margin: auto;
+            border: 2px;
+            border-radius: 30px;
+            padding: 20px;
+            color: #4C4B4B;
+
+        }
+
+        .p.fieldShape {
+            height: 50px;
+        }
+
+        .button {
+            background-color: rgba(194, 63, 63, 0.83);
+            border: none;
+            float: right;
+            border-radius: 20px;
+            padding: 5px 8px;
+            text-align: center;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #F7F4F4;
+            font-size: 16px;
+            margin: 40px 20px;
+            cursor: pointer;
+            box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .error {
+            color: rgba(194, 63, 63, 0.83);
+        }
+    </style>
+
+    
+</head>
+<body>
+    <br><br><br>
+    <div class="myDiv2">
+        <h2 align="center">Create New Acount <br></h2><br>
+
+        <form method="POST" action="StudentInfo.php" id="form"><p>
+                <label>Name:&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <input id="uname" name="name" type="text" size="30" style="font-size: 20px;"
+                        placeholder="Enter your name" required><br><br>
+                </label>
+
+                <label>Phone Number:&emsp;&nbsp;&nbsp;
+                    <input name="studentphone" type="text" size="30" style="font-size: 20px;"
+                        placeholder="Enter your Phone Number" pattern=".{10,}" title="Mobile Number must be 10 digit"
+                        required> <br><br>
+                </label>
+
+                <label>Email:&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <input id="email" name="email" type="email" size="30" style="font-size: 20px;"
+                        placeholder="Enter your Email" required><br><br>
+                </label>
+
+                <label>Password:&emsp;&emsp;&emsp;&ensp;
+                    <input type="password" size="30" style="font-size: 20px;" placeholder="Enter your Password" id="psw"
+                        name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"required><br><br>
+                </label>
+
+                <label>&emsp;Gender:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+                    <input type="radio" name="gender" value="Female">Female &emsp;&emsp;&emsp;&emsp;
+                    <input type="radio" name="gender" value="Male"> Male&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <br><br>
+                </label>
+                
+                <input type="checkbox" name="optradio" required>By signing up you're completely agree on our <a href="url" style="text-decoration: none">terms & privacy&ensp;&emsp;&emsp;&ensp;&emsp;</a>
+                <br><br>
+                <a href="url" style="text-decoration: none">Already have an account?</a>
+                <a href="tutroLogin.php"
+                    style="color:#9e9797;">Login</a>&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;
+            </p>
+
+            <button class="button" type="submit">Sign up</button>
+            <button class="button" type="reset" style="margin: 40px -10px;">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>
